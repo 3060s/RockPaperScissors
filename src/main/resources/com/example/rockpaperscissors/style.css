@@ -1,0 +1,20 @@
+.button { -fx-focus-color: transparent; }
+
+#btn_paper, #btn_rock, #btn_scissors {
+    -fx-background-color: #000000;
+    -fx-background-radius: 10;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-font-size: 18;
+    -fx-text-fill: #ffffff;
+
+}
+
+ {
+    -fx-background-color: #31aa7d;
+}
+
+#btn_paper:hover, #btn_rock:hover, #btn_scissors:hover {
+    -fx-cursor: hand;
+}

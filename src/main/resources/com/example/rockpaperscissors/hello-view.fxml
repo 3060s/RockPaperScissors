@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.rockpaperscissors.HelloController">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rockpaperscissors.HelloController">
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
   <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+  <!-- Welcome Label -->
+  <Label fx:id="welcomeText" alignment="CENTER" layoutX="425.0" layoutY="45.0" prefHeight="45.0" prefWidth="230.0" text="Opponent:" textAlignment="JUSTIFY">
+      <font>
+         <Font name="Rubik Bold Italic" size="43.0" />
+      </font></Label>
+
+  <!-- Paper Button -->
+  <Button id="btn_paper" fx:id="btn_paper" layoutX="502.0" layoutY="602.0" onAction="#onPaperButtonClick" text="Paper" textAlignment="JUSTIFY">
+      <font>
+         <Font name="System Bold" size="11.0" />
+      </font></Button>
+
+  <!-- Rock Button -->
+  <Button id="btn_rock" fx:id="btn_rock" layoutX="188.0" layoutY="602.0" onAction="#onRockButtonClick" text="Rock" />
+
+  <!-- Scissors Button -->
+  <Button id="btn_scissors" fx:id="btn_scissors" layoutX="806.0" layoutY="602.0" onAction="#onScissorsButtonClick" text="Scissors" />
+   <Label id="comp_move" fx:id="comp_move" alignment="CENTER" layoutX="474.0" layoutY="115.0" prefHeight="59.0" prefWidth="132.0" text="eee">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label id="result_label" fx:id="result_label" alignment="CENTER" layoutX="434.0" layoutY="307.0" prefHeight="107.0" prefWidth="212.0" text="You lose!">
+      <font>
+         <Font name="System Bold" size="46.0" />
+      </font>
+   </Label>
+   <Label layoutX="852.0" layoutY="269.0" prefHeight="52.0" prefWidth="92.0" text="Score:">
+      <font>
+         <Font name="Rubik Bold Italic" size="26.0" />
+      </font>
+   </Label>
+   <Label layoutX="979.0" layoutY="269.0" prefHeight="52.0" prefWidth="85.0" text="empty rn">
+      <font>
+         <Font name="System Bold" size="26.0" />
+      </font>
+   </Label>
+   <Label layoutX="848.0" layoutY="360.0" prefHeight="52.0" prefWidth="118.0" text="Winrate:">
+      <font>
+         <Font name="Rubik Bold Italic" size="26.0" />
+      </font>
+   </Label>
+   <Label layoutX="979.0" layoutY="360.0" prefHeight="52.0" prefWidth="85.0" text="empty rn">
+      <font>
+         <Font name="System Bold" size="26.0" />
+      </font>
+   </Label>
+</AnchorPane>
