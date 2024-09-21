@@ -12,6 +12,7 @@ public class HelloController {
 
     Game game = new Game();
 
+
     @FXML
     protected void onPaperButtonClick() {
         handleUserMove(Game.Move.PAPER);
@@ -28,14 +29,20 @@ public class HelloController {
     }
 
     private void handleUserMove(Game.Move playerMove) {
+        //ResultLabelNotVisible(); // naprawic to bo nie dziala zawsze
         Game.Move computerMove = game.getComputerMove();
         String result = game.play(playerMove, computerMove); //z ta zmienna cos zrobic
         comp_move.setText(computerMove.toString());
+        ResultLabelVisible();
     }
 
     @FXML
-    protected void ResultLabelVisibility() {
-        boolean show = game.shouldShowLabel();
-        result_label.setVisible(show); //to tez do ogarniecia
+    protected void ResultLabelNotVisible() {
+        result_label.setVisible(false);
+    }
+
+    @FXML
+    protected void ResultLabelVisible() {
+        result_label.setVisible(true);
     }
 }

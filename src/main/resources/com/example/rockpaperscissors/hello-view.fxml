@@ -32,12 +32,12 @@
 
   <!-- Scissors Button -->
   <Button id="btn_scissors" fx:id="btn_scissors" layoutX="806.0" layoutY="602.0" onAction="#onScissorsButtonClick" text="Scissors" />
-   <Label id="comp_move" fx:id="comp_move" alignment="CENTER" layoutX="474.0" layoutY="115.0" prefHeight="59.0" prefWidth="132.0" text="eee">
+   <Label id="comp_move" fx:id="comp_move" alignment="CENTER" layoutX="474.0" layoutY="115.0" prefHeight="59.0" prefWidth="132.0" text="">
       <font>
          <Font size="27.0" />
       </font>
    </Label>
-   <Label id="result_label" fx:id="result_label" alignment="CENTER" layoutX="434.0" layoutY="307.0" prefHeight="107.0" prefWidth="212.0" text="You lose!">
+   <Label id="result_label" fx:id="result_label" visible="false" alignment="CENTER" layoutX="434.0" layoutY="307.0" prefHeight="107.0" prefWidth="212.0" text="You Win!">
       <font>
          <Font name="System Bold" size="46.0" />
       </font>

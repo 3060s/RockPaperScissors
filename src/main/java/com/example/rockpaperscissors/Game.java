@@ -2,12 +2,8 @@ package com.example.rockpaperscissors;
 
 public class Game {
 
-    public boolean shouldShowLabel() {
-        return false;
-    }
-
+    private HelloController controller;
     public enum Move { ROCK, PAPER, SCISSORS }
-
 
 
     public String play(Move playerMove, Move computerMove) {
@@ -27,4 +23,11 @@ public class Game {
         return moves[(int)(Math.random() * moves.length)];
     }
 
+    public boolean ShowLabel() {
+        return true;
+    }
+
+    public boolean HideLabel() {
+        return false;
+    }
 }
