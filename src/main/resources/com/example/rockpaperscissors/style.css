@@ -11,6 +11,10 @@
 
 }
 
+#btn_paper:pressed, #btn_rock:pressed, #btn_scissors:pressed {
+    -fx-border-color: #000000;
+}
+
  {
     -fx-background-color: #31aa7d;
 }

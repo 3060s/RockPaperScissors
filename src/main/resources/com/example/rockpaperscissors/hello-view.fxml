@@ -37,27 +37,27 @@
          <Font size="27.0" />
       </font>
    </Label>
-   <Label id="result_label" fx:id="result_label" visible="false" alignment="CENTER" layoutX="434.0" layoutY="307.0" prefHeight="107.0" prefWidth="212.0" text="You Win!">
+   <Label id="result_label" fx:id="result_label" alignment="CENTER" layoutX="434.0" layoutY="307.0" prefHeight="107.0" prefWidth="212.0" text="You Win!" visible="false">
       <font>
          <Font name="System Bold" size="46.0" />
       </font>
    </Label>
-   <Label layoutX="852.0" layoutY="269.0" prefHeight="52.0" prefWidth="92.0" text="Score:">
+   <Label layoutX="815.0" layoutY="269.0" prefHeight="52.0" prefWidth="92.0" text="Score:">
       <font>
          <Font name="Rubik Bold Italic" size="26.0" />
       </font>
    </Label>
-   <Label layoutX="979.0" layoutY="269.0" prefHeight="52.0" prefWidth="85.0" text="empty rn">
+   <Label id="score_label" fx:id="score_label" layoutX="963.0" layoutY="269.0" prefHeight="52.0" prefWidth="92.0" text="">
       <font>
          <Font name="System Bold" size="26.0" />
       </font>
    </Label>
-   <Label layoutX="848.0" layoutY="360.0" prefHeight="52.0" prefWidth="118.0" text="Winrate:">
+   <Label layoutX="815.0" layoutY="360.0" prefHeight="52.0" prefWidth="118.0" text="Winrate:">
       <font>
          <Font name="Rubik Bold Italic" size="26.0" />
       </font>
    </Label>
-   <Label layoutX="979.0" layoutY="360.0" prefHeight="52.0" prefWidth="85.0" text="empty rn">
+   <Label id="winrate_label" fx:id="winrate_label" layoutX="959.0" layoutY="360.0" prefHeight="52.0" prefWidth="92.0" text="">
       <font>
          <Font name="System Bold" size="26.0" />
       </font>

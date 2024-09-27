@@ -9,6 +9,8 @@ public class HelloController {
     private Label welcomeText;
     @FXML private Label result_label;
     @FXML private Label comp_move;
+    @FXML private Label score_label;
+    @FXML private Label winrate_label;
 
     Game game = new Game();
 
@@ -33,7 +35,16 @@ public class HelloController {
         Game.Move computerMove = game.getComputerMove();
         String result = game.play(playerMove, computerMove); //z ta zmienna cos zrobic
         comp_move.setText(computerMove.toString());
+        result_label.setText(result);
         ResultLabelVisible();
+
+        int playerScore = game.getPlayerScore();
+        score_label.setText(String.valueOf(playerScore));
+
+        int allScore = game.getAllScore();
+
+        float winrate = (float) playerScore / allScore * 100;
+        winrate_label.setText(String.format("%.1f%%", winrate));
     }
 
     @FXML
