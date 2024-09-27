@@ -5,7 +5,6 @@ public class Game {
     private int playerScore = 0;
     private int allScore = 0;
 
-    private HelloController controller;
     public enum Move { ROCK, PAPER, SCISSORS }
 
 
@@ -34,13 +33,5 @@ public class Game {
 
     public int getAllScore() {
         return allScore;
-    }
-
-    public boolean ShowLabel() {
-        return true;
-    }
-
-    public boolean HideLabel() {
-        return false;
     }
 }
